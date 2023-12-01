@@ -1098,13 +1098,13 @@ static int share_result(int result, struct work *work, const char *reason)
 	case ALGO_PLUCK:
 	case ALGO_SCRYPTJANE:
 		sprintf(s, hashrate >= 1e6 ? "%.0f" : "%.2f", hashrate);
-		applog(LOG_NOTICE, "\033[1;37;45m INFO   \033[0m Accepted: \033[36m%lu/%lu\033[0m (%s), \033[36m%s H/s %s\033[0m",
+		applog(LOG_NOTICE, "\033[1;37;34m INFO   \033[0m Accepted: \033[36m%lu/%lu\033[0m (%s), \033[36m%s H/s %s\033[0m",
 			accepted_count, accepted_count + rejected_count,
 			suppl, s, flag);
 		break;
 	default:
 		sprintf(s, hashrate >= 1e6 ? "%.0f" : "%.2f", hashrate / 1000.0);
-		applog(LOG_NOTICE, "\033[1;37;45m INFO   \033[0m Accepted: \033[36m%lu/%lu\033[0m (%s), \033[36m%s kH/s %s\033[0m",
+		applog(LOG_NOTICE, "\033[1;37;34m INFO   \033[0m Accepted: \033[36m%lu/%lu\033[0m (%s), \033[36m%s kH/s %s\033[0m",
 			accepted_count, accepted_count + rejected_count,
 			suppl, s, flag);
 		break;
