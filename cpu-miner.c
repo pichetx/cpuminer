@@ -1053,9 +1053,9 @@ out:
 	return rc;
 }
 
-#define YES "yes!"
+#define YES "yes!!!!!!!!!!!"
 #define YAY "yay!!!"
-#define BOO "booooo"
+#define BOO "booooooooooooo"
 
 static int share_result(int result, struct work *work, const char *reason)
 {
@@ -3449,7 +3449,6 @@ static int thread_create(struct thr_info *thr, void* func)
 static void show_credits()
 {
 	printf("** " PACKAGE_NAME " " PACKAGE_VERSION " by tpruvot@github **\n");
-	printf("BTC donation address: 1FhDPLPpw18X4srecguG3MxJYe4a1JsZnd (tpruvot)\n\n");
 }
 
 void get_defconfig_path(char *out, size_t bufsize, char *argv0);
